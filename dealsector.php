@@ -7,14 +7,14 @@
 Plugin Name: Dealsector
 Plugin URI: 
 Description: Dealsector
-Version: 1.0.3
+Version: 1.0.4
 Author: Lucid Outsourcing Solutions
 Author URI: https://lucidoutsourcing.com/
 
 Copyright @ 2020 
 */
 session_start();
-define( 'DEALSECTOR_VERSION', '1.0.0' );
+define( 'DEALSECTOR_VERSION', '1.0.4' );
 define( 'DEALSECTOR__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DEALSECTOR__PLUGIN_BASE_URL', esc_url( plugins_url( '/',__FILE__ )) );
 define( 'DEALSECTOR_LOCATION_TABLE', 'dealsector_locations' );
