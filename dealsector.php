@@ -7,7 +7,7 @@
 Plugin Name: Dealsector
 Plugin URI: 
 Description: Dealsector
-Version: 1.0.2
+Version: 1.0.3
 Author: Lucid Outsourcing Solutions
 Author URI: https://lucidoutsourcing.com/
 
@@ -21,12 +21,16 @@ define( 'DEALSECTOR_LOCATION_TABLE', 'dealsector_locations' );
 define( 'DEALSECTOR_CLIENT_TABLE', 'dealsector_client_detail' );
 define( 'DEALSECTOR_SHORTCODE_TEMPLATE', 'dealsector_shortcode_template_detail' );
 define( 'DEALSECTOR_SITE_URL', site_url() );
-
+$slug=plugin_basename(__FILE__);
 $root = dirname(dirname(dirname(dirname(__FILE__))));
 if (file_exists($root.'/wp-load.php')) {
     require_once($root.'/wp-load.php');
 } 
 require_once( ABSPATH . 'wp-admin/includes/post.php' );
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker('https://github.com/vimleshp/ds',__FILE__,$slug);
+$myUpdateChecker->setBranch('main');
+$myUpdateChecker->setAuthentication('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');
 
 
 global $wpdb;
