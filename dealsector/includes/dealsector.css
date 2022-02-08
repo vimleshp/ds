@@ -1,0 +1,229 @@
+.bottompaginationline{
+	border: 1px solid white;
+}
+/*#menu-site-top-nav li:nth-child(2), #menu-site-top-nav-1 li:nth-child(2),#mobile-menu-site-top-nav li:nth-child(2), #mobile-menu-site-top-nav-1 li:nth-child(2) {
+	display:none;
+}*/
+.sliderDemo-viewdetail{
+    width: 100%;
+}
+.sliderDemo{
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.photo-gallery, .photo-gallery-new {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+    min-height:480px;
+}
+.photo-gallery li, .photo-gallery-new li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.photo-gallery-new img, .photo-gallery-new video, .photo-gallery img, .photo-gallery video, .photo-gallery-viewdetail img, .photo-gallery-viewdetail video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+} 
+.hidden{
+    display: none;
+}
+.lazy, .lazy-viewdetail {
+    display: block;
+    /* optional way, set loading as background */
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#list_loader, .photo_loader{
+    display: none;
+    text-align: center;
+	width:100%;
+}
+.photo-gallery, .photo-gallery-new{
+    padding:100px;
+}
+.photo-view-viewdetail{
+	text-align:center;
+	width:100%;
+	margin-top:150px;
+	min-height:200px;
+}
+.photo-modal, .photo-modal-new, .photo-modal-viewdetail {
+    display:none; 
+    z-index: 999999; 
+    overflow-y:scroll;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #dddddd;
+}.photo-modal-new .photo-modal-close-new,.photo-modal .photo-modal-close, .photo-modal-viewdetail .photo-modal-close-viewdetail {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    z-index: 999;
+    cursor: pointer;
+}
+.pagination_prev_disabled{
+  cursor: not-allowed !important;
+  background:grey;
+  color:grey !important;;	
+  border:grey !important;;	
+}
+.pagination_next_disabled{
+  cursor: not-allowed !important;
+  background:grey;
+  color:grey !important;;
+  border:grey !important;;
+}
+
+.invUnitCarousel li {text-align:center;}
+.invUnitCarousel li img{height:552px;}
+
+ .photobodycover, .photo-modal-new, .photo-modal-viewdetail {
+    display:none; 
+    z-index: 999999;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 85%);
+    overflow-y: scroll;
+}
+.photobodycover .photo-modal{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+    background: #4d4d59;
+}
+.photobodycover .photo-modal .photo-modal-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    background: #fff;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #4d4d59;
+}
+/*.photobodycover .photo-modal .photo-modal-close img{
+    width: 30px;
+    background: #fff;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}*/
+.photobodycover .photo-modal .lSSlideOuter{
+    max-height: inherit;
+    position: relative;
+}
+.photobodycover .photo-modal .lSAction > a,
+.photobodycover a.bottomCtrl{
+    background-image: none;
+    width: 27px;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0.85;
+    color: #4d4d59 !important;
+}
+.photobodycover .bottomCtrl{
+    display: block;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 98;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+.photobodycover a.bottomCtrl.lSPrev{
+    left: 0;
+}
+.photobodycover a.bottomCtrl.lSNext{
+    right: 0;
+}
+.photobodycover .photo-modal .lSAction > a:hover,
+.photobodycover a.bottomCtrl:hover {
+    opacity: 1;
+}
+.photobodycover .photo-modal .lSSlideOuter .lSPager.lSGallery{
+    margin-top: 15px !important;
+    height: 70px !important;
+}
+
+.img-overlay-container {
+    position: relative;
+    display: block;
+  }
+.image_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+    background: #c11f24;
+    text-transform: uppercase;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.image_overlay p {
+    color: white !important;
+    margin-bottom: 0;
+    font-size:14px;
+}
+
+.text-right{text-align:right;}
+
+.clearfix{clear:both;}
+
+.noborder{background:#CCC;
+    cursor:not-allowed;
+    text-decoration:none !important
+}
+
+.pageLink{text-decoration:none !important;}
+.page-link{text-decoration:none !important;}
+
+.itemSubTitle{font-size:14px;}
+
+.slider_loader_img{
+    position: absolute;
+    top: 110px;
+    left: 180px;
+}
+
+.invUnitCarouseltest{display:none;}
+.invWrapper{min-height:450px;}
+
+#home_search_text{padding-top:15px;
+    font-weight:400;
+    text-align:center;
+}
+
+.paginationresult{text-align: center;}
+
