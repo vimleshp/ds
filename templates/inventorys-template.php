@@ -8,7 +8,7 @@
 <?php  echo '<div id="template_id" style="display:none;">'.$template_id.'</div>';?>
 <!-- Image loader -->
  <?php $temp_trailer_type=$trailer_type;?>
-<div id="showresults">
+<div id="showresults" class="dstest">
     
 <?php
     if(isset($_POST['template_id'])){
