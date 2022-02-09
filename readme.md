@@ -1,6 +1,6 @@
 
 === Dealsector ===
-~Current Version:1.4~
+Current Version:1.0.5
 Contributors: (abc)
 Donate link: https://example.com/
 Tags: tag1, tag2
